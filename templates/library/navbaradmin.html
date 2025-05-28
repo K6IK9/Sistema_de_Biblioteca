@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Barra de Navegação com Dropdown e Formulário de Pesquisa</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<style type="text/css">
+  .bs-example{
+    margin: 0px;
+
+  }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="bs-example">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a href="/" class="navbar-brand">Gerenciamento de Biblioteca</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <div class="navbar-nav">
+        <a href="/" class="nav-item nav-link active">Início</a>
+
+        <!--for book dropdown button-->
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Livro</a>
+          <div class="dropdown-menu">
+          <a href="addbook" class="dropdown-item">Adicionar Livro</a>
+          <a href="viewbook" class="dropdown-item">Visualizar Livro</a>
+          </div>
+        </div>
+
+        <!--for issuebook dropdown button-->
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Emprestar Livro</a>
+          <div class="dropdown-menu">
+          <a href="issuebook" class="dropdown-item">Emprestar Novo Livro</a>
+          <a href="viewissuedbook" class="dropdown-item">Ver Livros Emprestados</a>
+          </div>
+        </div>
+
+        <!--for student dropdown button-->
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Estudante</a>
+          <div class="dropdown-menu">
+          <a href="viewstudent" class="dropdown-item">Ver Estudantes</a>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="navbar-nav">
+        <a href="logout" class="nav-item nav-link">SAIR</a> &nbsp
+        <a href="/aboutus" class="nav-item nav-link">Sobre Nós</a>
+        <a href="contactus" class="nav-item nav-link">Contato</a>
+      </div>
+
+
+
+
+    </div>
+  </nav>
+</div>
+
+
+</body>
+</html>
